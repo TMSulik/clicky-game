@@ -1,0 +1,33 @@
+body {
+  background-color: black;
+  color: darkcyan;
+}
+
+.tom {
+  /* text-align: left; */
+  /* float: left; */
+  margin-left: 50px;
+  display:inline-block;
+  margin-right: 20%;
+}
+
+.tim {
+  /* text-align: right; */
+  /* float: right; */
+  margin-right: 50px;
+  display: inline-block;
+}
+
+
+a:link {
+  color: red;
+}
+a:visited {
+  color: green;
+}
+a:hover {
+  color: hotpink;
+}
+a:active {
+  color: blue;
+}

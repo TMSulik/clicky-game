@@ -4,19 +4,36 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 40px;
   pointer-events: none;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  background-color: black;
+  height: 15vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: darkcyan;
+  padding: 20px;
+}
+
+.App-body {
+  background-image: url(./images/watercolor.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  min-height: 85vh;
   color: white;
+  margin-top: -20px;
+}
+
+.input-lg {
+  background: transparent;
+  border: none;
+  padding: 0;
 }
 
 .App-link {

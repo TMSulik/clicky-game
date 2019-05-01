@@ -53,3 +53,41 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 ### `npm run build` fails to minify
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+The Railroad
+Olimar
+Brimstone
+Spades
+The Whale
+Stewpot
+Napoleon
+Augustín de Vedia
+Nine
+Black Peter
+Meat Blanket
+The Oceans
+Silvery Spider
+Dark Pyramid
+Labyrinth
+Grapevines
+Cancer
+Pliny the Elder
+Rosewood
+Caspian Sea
+Abandoned bedroom
+Skeleton
+Tigers
+Pistons
+Bison
+Shadow self
+Astrolabe
+Pisemire
+Dreadful remains
+Chains of love
+Magic orb
+Minerva
+Hyperion
+Blind rage
+Lost love
+Vermillion
