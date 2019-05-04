@@ -1,0 +1,18 @@
+.navbar li {
+  display: inline-block;
+  padding-block-end: 20px;
+  width: 33.3%;
+  text-align: center;
+  color: red;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40px;
+  pointer-events: none;
+}
+
+.top-line {
+  padding: 0;
+}
+

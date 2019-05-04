@@ -16,8 +16,8 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  font-family: 'Diplomata', cursive;
   color: darkcyan;
-  padding: 20px;
 }
 
 .App-body {
@@ -27,7 +27,12 @@
   background-size: cover;
   min-height: 85vh;
   color: white;
-  margin-top: -20px;
+  padding-top: 5%;
+}
+
+h1 {
+  color: darkturquoise;
+  /* text-shadow: 5px, 5px, black; */
 }
 
 .input-lg {
@@ -48,3 +53,25 @@
     transform: rotate(360deg);
   }
 }
+
+.navbar {
+  background: black;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.top-line {
+  padding: 0;
+}
+
+.li {
+  display: inline-block;
+  padding-block-end: 20px;
+  width: 33.3%;
+  text-align: center;
+  color: red;
+}
+
+
+

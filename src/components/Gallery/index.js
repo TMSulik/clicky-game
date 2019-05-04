@@ -1,62 +1,45 @@
 import React from "react";
+import Header from '../../components/Header';
 import { inkImages } from '../../services/images';
+import { words } from '../../services/captions';
+import { randomize } from '../../services/shuffle';
+import { giveInstruction } from '../../services/click';
+import '../../App.css';
+import logo from './logo.svg';
 
 class Gallery extends React.Component {
-  state = { inkblots: [] };
 
-  captions() {
-    const arr = [
-      "The Railroad",
-      "Wormwood",
-      "Brimstone",
-      "Spades",
-      "The Whale",
-      "Stewpot",
-      "Bonaparte",
-      "Augustín de Vedia",
-      "Nine",
-      "Rasputin",
-      "Black Phillip",
-      "Meat Blanket",
-      "The Oceans",
-      "Silvery Spider",
-      "Dark Pyramid",
-      "Labyrinth",
-      "Grapevines",
-      "Teratoma",
-      "Pliny the Elder",
-      "Rosewood",
-      "Caspian Sea",
-      "Abandoned Altar",
-      "Fatima",
-      "Tigers",
-      "Pistons",
-      "Bison",
-      "Shadow Self",
-      "Astrolabe",
-      "Pismire",
-      "Dread",
-      "Bondage",
-      "Friendly Angel",
-      "Minerva",
-      "Hyperion",
-      "Blind Faith",
-      "Lost Love",
-      "Vermillion"
-    ];
-    const random = Math.floor(Math.random() * (arr.length));
-    return arr[random];
-  } 
+  state = { inkblots: [], guesses: [], caps: [], instruction: "Click any image" };
 
   componentDidMount() {
-    this.setState({ inkblots: inkImages });
+    this.setState({ inkblots: inkImages, caps: words });
   }
 
   handleClick = event => {
     event.preventDefault();
-    console.log("CLICKED: ", event.target.alt);
-    // window.location.reload();
-    // this.componentDidMount();
+    
+    if(!this.state.guesses.includes(event.target.alt) ) {
+      this.state.guesses.push(event.target.alt);
+      this.setState({
+        instruction: giveInstruction(this.state.guesses)
+      })
+      console.log("GUESSES: ", this.state.guesses);
+    } else {
+      this.setState({
+        guesses: [],
+        instruction: "Begin again"
+      });
+      console.log("GUESSES: ", []);
+    }
+
+    randomize(inkImages);
+    randomize(words);
+
+    this.setState({
+      inkblots: inkImages,
+      caps: words
+    });
+     
   }
 
   getIndex = (str) => {
@@ -67,13 +50,13 @@ class Gallery extends React.Component {
     return index;
   }
 
-  renderImages() {
+  renderImages() {    
     return (
       this.state.inkblots.map(inkblot => {
         return(   
           <button onClick={this.handleClick} className="input-lg" key={this.getIndex(inkblot)}>
-            <img src={require(`../../images/${inkblot}`)} alt={`blot#${this.getIndex(inkblot)}`}  />
-            <p>{this.captions()}</p>
+            <img src={require(`../../images/${inkblot}`)} alt={(`blot#${this.getIndex(inkblot)}`)} />
+            <p>{this.state.caps[`${this.getIndex(inkblot)}`]}</p>
           </button>
         )    
       })
@@ -81,9 +64,22 @@ class Gallery extends React.Component {
   }
 
   render() {
-    console.log('state:', this.state);
     return (
       <div>
+        <div className="navbar">
+          <img src={logo} className={"App-logo"} alt="logo" />
+          <img src={logo} className={"App-logo"} alt="logo" />
+          <img src={logo} className={"App-logo"} alt="logo" />
+          <img src={logo} className={"App-logo"} alt="logo" />
+            <div className="top-line">
+              <ul>
+                <li id="instruction">{this.state.instruction.guide}</li>
+                <li id="current-score">Current Score: 0/16</li>
+                <li id="top-score">Top Score: 0/16</li>
+              </ul>
+            </div>
+        </div>
+        <Header />
         {this.renderImages()}
       </div>
     );
