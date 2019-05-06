@@ -4,4 +4,5 @@ h1 {
 }
 h4 {
   text-shadow: 2px 2px 4px black;
+  line-height: 0.5em;
 }

@@ -1,4 +1,4 @@
-const captions = [
+export const words = [
   "The Orb",
   "The Railroad",
   "Wormwood",
@@ -43,5 +43,3 @@ const captions = [
   "Unguent",
   "Burnt Offering"
 ];
-
-export const words = captions;
