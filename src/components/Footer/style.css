@@ -3,21 +3,16 @@ body {
   color: darkcyan;
 }
 
-.tom {
-  /* text-align: left; */
-  /* float: left; */
+.left-caption {
   margin-left: 50px;
   display:inline-block;
   margin-right: 20%;
 }
 
-.tim {
-  /* text-align: right; */
-  /* float: right; */
+.right-caption {
   margin-right: 50px;
   display: inline-block;
 }
-
 
 a:link {
   color: red;
