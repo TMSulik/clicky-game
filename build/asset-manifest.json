@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0dcac067.chunk.css",
+    "main.js": "/static/js/main.2f0c9655.chunk.js",
+    "main.js.map": "/static/js/main.2f0c9655.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.1de47be2.chunk.js": "/static/js/2.1de47be2.chunk.js",
+    "static/js/2.1de47be2.chunk.js.map": "/static/js/2.1de47be2.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.47cf0667f635d35c5ea88480a36282cc.js": "/precache-manifest.47cf0667f635d35c5ea88480a36282cc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.0dcac067.chunk.css.map": "/static/css/main.0dcac067.chunk.css.map",
+    "static/media/inkblot-1.png": "/static/media/inkblot-1.93f7c50d.png",
+    "static/media/inkblot-10.png": "/static/media/inkblot-10.129d8ef9.png",
+    "static/media/inkblot-11.png": "/static/media/inkblot-11.8392a643.png",
+    "static/media/inkblot-12.png": "/static/media/inkblot-12.7b499828.png",
+    "static/media/inkblot-13.png": "/static/media/inkblot-13.ad14a24f.png",
+    "static/media/inkblot-14.png": "/static/media/inkblot-14.ad6aafa1.png",
+    "static/media/inkblot-15.png": "/static/media/inkblot-15.ec85ac2e.png",
+    "static/media/inkblot-16.png": "/static/media/inkblot-16.b1a11b56.png",
+    "static/media/inkblot-2.png": "/static/media/inkblot-2.fa64b90a.png",
+    "static/media/inkblot-3.png": "/static/media/inkblot-3.2d2f3d2c.png",
+    "static/media/inkblot-4.png": "/static/media/inkblot-4.82b11f79.png",
+    "static/media/inkblot-5.png": "/static/media/inkblot-5.c27e82a8.png",
+    "static/media/inkblot-6.png": "/static/media/inkblot-6.0cc0aba2.png",
+    "static/media/inkblot-7.png": "/static/media/inkblot-7.029ad18f.png",
+    "static/media/inkblot-8.png": "/static/media/inkblot-8.7702aaa9.png",
+    "static/media/inkblot-9.png": "/static/media/inkblot-9.856aabf2.png",
+    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg",
+    "static/media/watercolor.jpg": "/static/media/watercolor.7c8549fc.jpg"
+  }
+}

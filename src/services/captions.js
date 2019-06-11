@@ -8,7 +8,7 @@ export const words = [
   "Stewpot",
   "Bonaparte",
   "Augustín de Vedia",
-  "Nine",
+  "Nº Nine",
   "Rasputin",
   "Black Phillip",
   "Meat Blanket",
